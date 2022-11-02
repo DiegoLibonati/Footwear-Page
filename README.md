@@ -40,3 +40,8 @@ I made a website about footwear, but basically what I did was to take a design f
 `https://diegolibonati.github.io/DiegoLibonatiWeb/#/projects?q=Footwear%20page`
 
 ## Video
+
+
+
+https://user-images.githubusercontent.com/99032604/199616412-1774c6ba-90c5-452e-b2e4-07ee147fe584.mp4
+
