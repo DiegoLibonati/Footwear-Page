@@ -1,435 +1,429 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-size: 10px;
-    list-style: none;
-    overflow-x: hidden;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 10px;
+  list-style: none;
+  overflow-x: hidden;
 }
 
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
 
-body{
-    width: 100%;
-    height: 100%;
+body {
+  width: 100%;
+  height: 100%;
 }
 
-.header_container{
-    position: absolute;
-    display: flex;
+.header_container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10rem;
+  z-index: 2;
+}
+
+.header_container button {
+  margin: 1rem;
+  border: none;
+  background: none;
+}
+
+.header_container button i {
+  font-size: 4rem;
+  color: #000;
+}
+
+.section_container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #cd021d;
+  transition: background 1s;
+}
+
+.section_container_principal {
+  position: relative;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 70rem;
+}
+
+.section_container_principal_header {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 30rem;
+}
+
+.section_container_principal_header i {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.section_container_principal_header h2 {
+  text-align: center;
+  font-size: 5rem;
+  color: #fff;
+}
+
+.section_container_principal_header h3 {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.section_container_principal_body {
+  overflow-y: hidden;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+  height: 40rem;
+}
+
+.section_container_principal_body-shoe1 {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 40rem;
+  position: absolute;
+  transform: translateX(200%);
+  transition: transform 1s;
+}
+
+.section_container_principal_body-shoe1 img {
+  max-width: 60%;
+  height: auto;
+  object-fit: cover;
+  margin: 1rem;
+}
+
+.section_container_principal_body-shoe1 h2 {
+  font-size: 3rem;
+  color: #fff;
+  margin: 1rem;
+}
+
+.section_container_principal_body-shoe1 button {
+  padding: 1rem;
+  font-size: 1.5rem;
+  background: #000;
+  border: none;
+  color: #fff;
+  margin: 1rem;
+}
+
+.section_container_principal_body-shoe2 {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 40rem;
+  position: absolute;
+  transform: translateX(200%);
+  transition: transform 1s;
+}
+
+.section_container_principal_body-shoe2 img {
+  max-width: 60%;
+  height: auto;
+  object-fit: cover;
+  margin: 1rem;
+}
+
+.section_container_principal_body-shoe2 h2 {
+  font-size: 3rem;
+  color: #fff;
+  margin: 1rem;
+}
+
+.section_container_principal_body-shoe2 button {
+  padding: 1rem;
+  font-size: 1.5rem;
+  background: #000;
+  border: none;
+  color: #fff;
+  margin: 1rem;
+}
+
+.section_container_principal_body-shoe3 {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 40rem;
+  position: absolute;
+  transform: translateX(200%);
+  transition: transform 1s;
+}
+
+.section_container_principal_body-shoe3 img {
+  max-width: 60%;
+  height: auto;
+  object-fit: cover;
+  margin: 1rem;
+}
+
+.section_container_principal_body-shoe3 h2 {
+  font-size: 3rem;
+  color: #fff;
+  margin: 1rem;
+}
+
+.section_container_principal_body-shoe3 button {
+  padding: 1rem;
+  font-size: 1.5rem;
+  background: #000;
+  border: none;
+  color: #fff;
+  margin: 1rem;
+}
+
+.section_container_principal_body-shoe4 {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 40rem;
+  position: absolute;
+  transform: translateX(200%);
+  transition: transform 1s;
+}
+
+.section_container_principal_body-shoe4 img {
+  max-width: 60%;
+  height: auto;
+  object-fit: cover;
+  margin: 1rem;
+}
+
+.section_container_principal_body-shoe4 h2 {
+  font-size: 3rem;
+  color: #fff;
+  margin: 1rem;
+}
+
+.section_container_principal_body-shoe4 button {
+  padding: 1rem;
+  font-size: 1.5rem;
+  background: #000;
+  border: none;
+  color: #fff;
+  margin: 1rem;
+}
+
+.section_container_principal_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 95%;
+  height: 40rem;
+}
+
+.section_container_principal_buttons button {
+  margin: 1rem;
+  border: none;
+  background: none;
+  color: rgb(0, 0, 0);
+}
+
+.section_container_principal_buttons button i {
+  font-size: 4rem;
+}
+
+.show-shoe {
+  transform: translateX(0%);
+  transition: transform 1s;
+}
+
+@media only screen and (min-width: 768px) {
+  .section_container_principal_header {
+    height: 30%;
+  }
+
+  .section_container_principal_body {
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 10rem;
-    z-index: 2;
+    height: 70%;
+  }
+
+  .section_container_principal_body-shoe1 h2 {
+    height: 5rem;
+  }
+
+  .section_container_principal_body-shoe1 button {
+    height: 5rem;
+  }
+
+  .section_container_principal_body-shoe2 h2 {
+    height: 5rem;
+  }
+
+  .section_container_principal_body-shoe2 button {
+    height: 5rem;
+  }
+
+  .section_container_principal_body-shoe3 h2 {
+    height: 5rem;
+  }
+
+  .section_container_principal_body-shoe3 button {
+    height: 5rem;
+  }
+
+  .section_container_principal_body-shoe4 h2 {
+    height: 5rem;
+  }
+
+  .section_container_principal_body-shoe4 button {
+    height: 5rem;
+  }
 }
 
-        .header_container button{
-            margin: 1rem;
-            border: none;
-            background: none;
-        }
+@media only screen and (min-width: 1024px) {
+  .header_container button {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    cursor: pointer;
+  }
 
-            .header_container button i{
-                font-size: 4rem;
-                color: #000;
-            }
+  .header_container button i {
+    font-size: 5rem;
+  }
 
-.section_container{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background: rgb(254, 19, 19);
-    transition: background 1s;
-}
+  .section_container_principal {
+    height: 90rem;
+  }
 
-    .section_container_principal{
-        position: relative;
-        overflow-y: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-flow: column nowrap;
-        width: 100%;
-        height: 70rem;
-    }
+  .section_container_principal_header {
+    height: 30rem;
+  }
 
-        .section_container_principal_header{
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
-            width: 80%;
-            height: 30rem;
-        }
+  .section_container_principal_header i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
 
-            .section_container_principal_header i{
-                font-size: 4rem;
-                color: #fff;
-            }
+  .section_container_principal_header h3 {
+    font-size: 3rem;
+  }
 
-            .section_container_principal_header h2{
-                text-align: center;
-                font-size: 5rem;
-                color: #fff;
-            }
-
-            .section_container_principal_header h3{
-                font-size: 2rem;
-                color: #fff;
-                text-align: center;
-            }
-
-        .section_container_principal_body{
-            overflow-y: hidden;
-            display: flex;
-            align-self: center;
-            justify-content: center;
-            width: 100%;
-            height: 40rem;
-        }
-
-            .section_container_principal_body-shoe1{
-                display: flex;
-                flex-flow: column nowrap;
-                align-items: center;
-                justify-content: center;
-                width: 80%;
-                height: 40rem;
-                position: absolute;
-                transform: translateX(200%);
-                transition: transform 1s;
-            }
-
-                .section_container_principal_body-shoe1 img{
-                    max-width: 60%;
-                    height: auto;
-                    object-fit: cover;
-                    margin: 1rem;
-                }
-
-                .section_container_principal_body-shoe1 h2{
-                    font-size: 3rem;
-                    color: #fff;
-                    margin: 1rem;
-                }
-
-                .section_container_principal_body-shoe1 button{
-                    padding: 1rem;
-                    font-size: 1.5rem;
-                    background: #000;
-                    border: none;
-                    color: #fff;
-                    margin: 1rem;
-                }
-
-            .section_container_principal_body-shoe2{
-                display: flex;
-                flex-flow: column nowrap;
-                align-items: center;
-                justify-content: center;
-                width: 80%;
-                height: 40rem;
-                position: absolute;
-                transform: translateX(200%);
-                transition: transform 1s;
-            }
-
-                .section_container_principal_body-shoe2 img{
-                    max-width: 60%;
-                    height: auto;
-                    object-fit: cover;
-                    margin: 1rem;
-                }
-
-                .section_container_principal_body-shoe2 h2{
-                    font-size: 3rem;
-                    color: #fff;
-                    margin: 1rem;
-                }
-
-                .section_container_principal_body-shoe2 button{
-                    padding: 1rem;
-                    font-size: 1.5rem;
-                    background: #000;
-                    border: none;
-                    color: #fff;
-                    margin: 1rem;
-                }
-
-            .section_container_principal_body-shoe3 {
-                display: flex;
-                flex-flow: column nowrap;
-                align-items: center;
-                justify-content: center;
-                width: 80%;
-                height: 40rem;
-                position: absolute;
-                transform: translateX(200%);
-                transition: transform 1s;
-            }
-
-                .section_container_principal_body-shoe3  img{
-                    max-width: 60%;
-                    height: auto;
-                    object-fit: cover;
-                    margin: 1rem;
-                }
-
-                .section_container_principal_body-shoe3  h2{
-                    font-size: 3rem;
-                    color: #fff;
-                    margin: 1rem;
-                }
-
-                .section_container_principal_body-shoe3 button{
-                    padding: 1rem;
-                    font-size: 1.5rem;
-                    background: #000;
-                    border: none;
-                    color: #fff;
-                    margin: 1rem;
-                }
-
-            .section_container_principal_body-shoe4{
-                display: flex;
-                flex-flow: column nowrap;
-                align-items: center;
-                justify-content: center;
-                width: 80%;
-                height: 40rem;
-                position: absolute;
-                transform: translateX(200%);
-                transition: transform 1s;
-            }
-
-                .section_container_principal_body-shoe4 img{
-                    max-width: 60%;
-                    height: auto;
-                    object-fit: cover;
-                    margin: 1rem;
-                }
-
-                .section_container_principal_body-shoe4 h2{
-                    font-size: 3rem;
-                    color: #fff;
-                    margin: 1rem;
-                }
-
-                .section_container_principal_body-shoe4 button{
-                    padding: 1rem;
-                    font-size: 1.5rem;
-                    background: #000;
-                    border: none;
-                    color: #fff;
-                    margin: 1rem;
-                }
-
-        .section_container_principal_buttons{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: absolute;
-            width: 95%;
-            height: 40rem;
-        }
-
-            .section_container_principal_buttons button{
-                margin: 1rem;
-                border: none;
-                background: none;
-                color: rgb(0, 0, 0);
-            }
-
-                .section_container_principal_buttons button i{
-                    font-size: 4rem;
-                }
-
-
-        .show-shoe{
-            transform: translateX(0%);
-            transition: transform 1s;
-        }
-
-
-@media only screen and (min-width: 768px){
-    .section_container_principal_header{
-        height: 30%;
-    }
-
-    .section_container_principal_body{
-        align-items: center;
-        height: 70%;
-    }
-
-    .section_container_principal_body-shoe1 h2{
-        height: 5rem;
-    }
-
-    .section_container_principal_body-shoe1 button{
-        height: 5rem;
-    }
-
-    .section_container_principal_body-shoe2 h2{
-        height: 5rem;
-    }
-
-    .section_container_principal_body-shoe2 button{
-        height: 5rem;
-    }
-
-    .section_container_principal_body-shoe3 h2{
-        height: 5rem;
-    }
-
-    .section_container_principal_body-shoe3 button{
-        height: 5rem;
-    }
-
-    .section_container_principal_body-shoe4 h2{
-        height: 5rem;
-    }
-
-    .section_container_principal_body-shoe4 button{
-        height: 5rem;
-    }
-}
-
-@media only screen and (min-width: 1024px){
- 
-            .header_container button{
-                margin-left: 5rem;
-                margin-right: 5rem;
-                cursor: pointer;
-            }
-    
-                .header_container button i{
-                    font-size: 5rem;
-                }
-
-    .section_container_principal{
-        height: 90rem;
-    }
-
-    .section_container_principal_header{
-        height: 30rem;
-    }
-
-        .section_container_principal_header i{
-            font-size: 4rem;
-            margin-bottom: 1rem;
-        }
-
-        .section_container_principal_header h3{
-            font-size: 3rem;
-        }
-
-    .section_container_principal_body{
-        height: 60rem;
-    }
-
-    .section_container_principal_body-shoe1{
+  .section_container_principal_body {
     height: 60rem;
-    }
+  }
 
-    .section_container_principal_body-shoe1 img{
+  .section_container_principal_body-shoe1 {
+    height: 60rem;
+  }
+
+  .section_container_principal_body-shoe1 img {
     max-width: 40%;
-    }
+  }
 
-    .section_container_principal_body-shoe1 h2{
+  .section_container_principal_body-shoe1 h2 {
     display: flex;
     align-items: center;
     font-size: 4rem;
     height: 6rem;
-    }
+  }
 
-    .section_container_principal_body-shoe1 button{
+  .section_container_principal_body-shoe1 button {
     height: 7rem;
     font-size: 2rem;
     padding: 2rem;
     cursor: pointer;
-    }
+  }
 
-    .section_container_principal_body-shoe2{
+  .section_container_principal_body-shoe2 {
     height: 60rem;
-    }
+  }
 
-    .section_container_principal_body-shoe2 img{
+  .section_container_principal_body-shoe2 img {
     max-width: 40%;
-    }
+  }
 
-    .section_container_principal_body-shoe2 h2{
+  .section_container_principal_body-shoe2 h2 {
     display: flex;
     align-items: center;
     font-size: 4rem;
     height: 6rem;
-    }
+  }
 
-    .section_container_principal_body-shoe2 button{
+  .section_container_principal_body-shoe2 button {
     height: 7rem;
     font-size: 2rem;
     padding: 2rem;
     cursor: pointer;
-    }
+  }
 
-    .section_container_principal_body-shoe3{
+  .section_container_principal_body-shoe3 {
     height: 60rem;
-    }
+  }
 
-    .section_container_principal_body-shoe3 img{
+  .section_container_principal_body-shoe3 img {
     max-width: 40%;
-    }
+  }
 
-    .section_container_principal_body-shoe3 h2{
+  .section_container_principal_body-shoe3 h2 {
     display: flex;
     align-items: center;
     font-size: 4rem;
     height: 6rem;
-    }
+  }
 
-    .section_container_principal_body-shoe3 button{
+  .section_container_principal_body-shoe3 button {
     height: 7rem;
     font-size: 2rem;
     padding: 2rem;
     cursor: pointer;
-    }
+  }
 
-    .section_container_principal_body-shoe4{
+  .section_container_principal_body-shoe4 {
     height: 60rem;
-    }
+  }
 
-    .section_container_principal_body-shoe4 img{
+  .section_container_principal_body-shoe4 img {
     max-width: 40%;
-    }
+  }
 
-    .section_container_principal_body-shoe4 h2{
+  .section_container_principal_body-shoe4 h2 {
     display: flex;
     align-items: center;
     font-size: 4rem;
     height: 6rem;
-    }
+  }
 
-    .section_container_principal_body-shoe4 button{
+  .section_container_principal_body-shoe4 button {
     height: 7rem;
     font-size: 2rem;
     padding: 2rem;
     cursor: pointer;
-    }
+  }
 
+  .section_container_principal_buttons {
+    height: 60rem;
+  }
 
-            .section_container_principal_buttons{
-                height: 60rem;
-            }
-    
-                .section_container_principal_buttons button{
-                    cursor: pointer;
-                }
-    
-                    .section_container_principal_buttons button i{
-                        font-size: 8rem;
-                    }
+  .section_container_principal_buttons button {
+    cursor: pointer;
+  }
 
-        
+  .section_container_principal_buttons button i {
+    font-size: 8rem;
+  }
 }
