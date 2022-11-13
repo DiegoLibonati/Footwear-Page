@@ -37,7 +37,7 @@ I made a website about footwear, but basically what I did was to take a design f
 
 ## Portfolio Link
 
-`https://diegolibonati.github.io/DiegoLibonatiWeb/#/projects?q=Footwear%20page`
+`https://diegolibonati.github.io/DiegoLibonatiWeb/#/projects?q=Footwear%20Page`
 
 ## Video
 
