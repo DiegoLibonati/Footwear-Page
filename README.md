@@ -23,21 +23,9 @@ I made a website about footwear, but basically what I did was to take a design f
 2. Javascript
 3. HTML5
 
-## Galery
-
-![Footwear-Car](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/Css/Imagenes/footwear-0.jpg)
-
-![Footwear-Car](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/Css/Imagenes/footwear-1.jpg)
-
-![Footwear-Car](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/Css/Imagenes/footwear-2.jpg)
-
-![Footwear-Car](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/Css/Imagenes/footwear-3.jpg)
-
-![Footwear-Car](https://raw.githubusercontent.com/DiegoLibonati/DiegoLibonatiWeb/main/data/projects/Css/Imagenes/footwear-4.jpg)
-
 ## Portfolio Link
 
-`https://diegolibonati.github.io/DiegoLibonatiWeb/#/projects?q=Footwear%20Page`
+[`https://www.diegolibonati.com.ar/#/project/37`](https://www.diegolibonati.com.ar/#/project/37)
 
 ## Video
 
