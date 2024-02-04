@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 * {
   padding: 0px;
   margin: 0px;
@@ -5,6 +7,7 @@
   font-size: 10px;
   list-style: none;
   overflow-x: hidden;
+  font-family: "Roboto", "sans serif";
 }
 
 img {
@@ -14,27 +17,6 @@ img {
 body {
   width: 100%;
   height: 100%;
-}
-
-.header_container {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 10rem;
-  z-index: 2;
-}
-
-.header_container button {
-  margin: 1rem;
-  border: none;
-  background: none;
-}
-
-.header_container button i {
-  font-size: 4rem;
-  color: #000;
 }
 
 .section_container {
@@ -53,7 +35,7 @@ body {
   justify-content: flex-start;
   flex-flow: column nowrap;
   width: 100%;
-  height: 70rem;
+  height: 100%;
 }
 
 .section_container_principal_header {
@@ -62,12 +44,13 @@ body {
   justify-content: center;
   align-items: center;
   width: 80%;
-  height: 30rem;
+  height: 30%;
 }
 
 .section_container_principal_header i {
   font-size: 4rem;
   color: #fff;
+  overflow: hidden;
 }
 
 .section_container_principal_header h2 {
@@ -85,10 +68,10 @@ body {
 .section_container_principal_body {
   overflow-y: hidden;
   display: flex;
-  align-self: center;
+  align-items: center;
   justify-content: center;
   width: 100%;
-  height: 40rem;
+  height: 70%;
 }
 
 .section_container_principal_body-shoe1 {
@@ -97,7 +80,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 80%;
-  height: 40rem;
+  height: 70%;
   position: absolute;
   transform: translateX(200%);
   transition: transform 1s;
@@ -107,13 +90,12 @@ body {
   max-width: 60%;
   height: auto;
   object-fit: cover;
-  margin: 1rem;
 }
 
 .section_container_principal_body-shoe1 h2 {
   font-size: 3rem;
   color: #fff;
-  margin: 1rem;
+  margin-top: 1rem;
 }
 
 .section_container_principal_body-shoe1 button {
@@ -122,7 +104,7 @@ body {
   background: #000;
   border: none;
   color: #fff;
-  margin: 1rem;
+  margin-top: 1rem;
 }
 
 .section_container_principal_body-shoe2 {
@@ -131,23 +113,23 @@ body {
   align-items: center;
   justify-content: center;
   width: 80%;
-  height: 40rem;
+  height: 70%;
   position: absolute;
   transform: translateX(200%);
   transition: transform 1s;
+  opacity: 0
 }
 
 .section_container_principal_body-shoe2 img {
   max-width: 60%;
   height: auto;
   object-fit: cover;
-  margin: 1rem;
 }
 
 .section_container_principal_body-shoe2 h2 {
   font-size: 3rem;
   color: #fff;
-  margin: 1rem;
+  margin-top: 1rem;
 }
 
 .section_container_principal_body-shoe2 button {
@@ -156,8 +138,9 @@ body {
   background: #000;
   border: none;
   color: #fff;
-  margin: 1rem;
+  margin-top: 1rem;
 }
+
 
 .section_container_principal_body-shoe3 {
   display: flex;
@@ -165,23 +148,23 @@ body {
   align-items: center;
   justify-content: center;
   width: 80%;
-  height: 40rem;
+  height: 70%;
   position: absolute;
   transform: translateX(200%);
   transition: transform 1s;
+  opacity: 0
 }
 
 .section_container_principal_body-shoe3 img {
   max-width: 60%;
   height: auto;
   object-fit: cover;
-  margin: 1rem;
 }
 
 .section_container_principal_body-shoe3 h2 {
   font-size: 3rem;
   color: #fff;
-  margin: 1rem;
+  margin-top: 1rem;
 }
 
 .section_container_principal_body-shoe3 button {
@@ -190,7 +173,7 @@ body {
   background: #000;
   border: none;
   color: #fff;
-  margin: 1rem;
+  margin-top: 1rem;
 }
 
 .section_container_principal_body-shoe4 {
@@ -199,23 +182,23 @@ body {
   align-items: center;
   justify-content: center;
   width: 80%;
-  height: 40rem;
+  height: 70%;
   position: absolute;
   transform: translateX(200%);
   transition: transform 1s;
+  opacity: 0
 }
 
 .section_container_principal_body-shoe4 img {
   max-width: 60%;
   height: auto;
   object-fit: cover;
-  margin: 1rem;
 }
 
 .section_container_principal_body-shoe4 h2 {
   font-size: 3rem;
   color: #fff;
-  margin: 1rem;
+  margin-top: 1rem;
 }
 
 .section_container_principal_body-shoe4 button {
@@ -224,7 +207,7 @@ body {
   background: #000;
   border: none;
   color: #fff;
-  margin: 1rem;
+  margin-top: 1rem;
 }
 
 .section_container_principal_buttons {
@@ -245,185 +228,27 @@ body {
 
 .section_container_principal_buttons button i {
   font-size: 4rem;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .show-shoe {
   transform: translateX(0%);
+  opacity: 1;
   transition: transform 1s;
 }
 
-@media only screen and (min-width: 768px) {
-  .section_container_principal_header {
-    height: 30%;
-  }
-
-  .section_container_principal_body {
-    align-items: center;
-    height: 70%;
-  }
-
-  .section_container_principal_body-shoe1 h2 {
-    height: 5rem;
-  }
-
-  .section_container_principal_body-shoe1 button {
-    height: 5rem;
-  }
-
-  .section_container_principal_body-shoe2 h2 {
-    height: 5rem;
-  }
-
-  .section_container_principal_body-shoe2 button {
-    height: 5rem;
-  }
-
-  .section_container_principal_body-shoe3 h2 {
-    height: 5rem;
-  }
-
-  .section_container_principal_body-shoe3 button {
-    height: 5rem;
-  }
-
-  .section_container_principal_body-shoe4 h2 {
-    height: 5rem;
-  }
-
-  .section_container_principal_body-shoe4 button {
-    height: 5rem;
-  }
-}
-
 @media only screen and (min-width: 1024px) {
-  .header_container button {
-    margin-left: 5rem;
-    margin-right: 5rem;
-    cursor: pointer;
-  }
-
-  .header_container button i {
-    font-size: 5rem;
-  }
-
-  .section_container_principal {
-    height: 90rem;
-  }
-
-  .section_container_principal_header {
-    height: 30rem;
-  }
-
-  .section_container_principal_header i {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-  }
-
-  .section_container_principal_header h3 {
-    font-size: 3rem;
-  }
-
-  .section_container_principal_body {
-    height: 60rem;
-  }
-
-  .section_container_principal_body-shoe1 {
-    height: 60rem;
-  }
-
   .section_container_principal_body-shoe1 img {
     max-width: 40%;
   }
-
-  .section_container_principal_body-shoe1 h2 {
-    display: flex;
-    align-items: center;
-    font-size: 4rem;
-    height: 6rem;
-  }
-
-  .section_container_principal_body-shoe1 button {
-    height: 7rem;
-    font-size: 2rem;
-    padding: 2rem;
-    cursor: pointer;
-  }
-
-  .section_container_principal_body-shoe2 {
-    height: 60rem;
-  }
-
   .section_container_principal_body-shoe2 img {
     max-width: 40%;
   }
-
-  .section_container_principal_body-shoe2 h2 {
-    display: flex;
-    align-items: center;
-    font-size: 4rem;
-    height: 6rem;
-  }
-
-  .section_container_principal_body-shoe2 button {
-    height: 7rem;
-    font-size: 2rem;
-    padding: 2rem;
-    cursor: pointer;
-  }
-
-  .section_container_principal_body-shoe3 {
-    height: 60rem;
-  }
-
   .section_container_principal_body-shoe3 img {
     max-width: 40%;
   }
-
-  .section_container_principal_body-shoe3 h2 {
-    display: flex;
-    align-items: center;
-    font-size: 4rem;
-    height: 6rem;
-  }
-
-  .section_container_principal_body-shoe3 button {
-    height: 7rem;
-    font-size: 2rem;
-    padding: 2rem;
-    cursor: pointer;
-  }
-
-  .section_container_principal_body-shoe4 {
-    height: 60rem;
-  }
-
   .section_container_principal_body-shoe4 img {
     max-width: 40%;
-  }
-
-  .section_container_principal_body-shoe4 h2 {
-    display: flex;
-    align-items: center;
-    font-size: 4rem;
-    height: 6rem;
-  }
-
-  .section_container_principal_body-shoe4 button {
-    height: 7rem;
-    font-size: 2rem;
-    padding: 2rem;
-    cursor: pointer;
-  }
-
-  .section_container_principal_buttons {
-    height: 60rem;
-  }
-
-  .section_container_principal_buttons button {
-    cursor: pointer;
-  }
-
-  .section_container_principal_buttons button i {
-    font-size: 8rem;
   }
 }

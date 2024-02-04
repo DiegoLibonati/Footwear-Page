@@ -1,48 +1,12 @@
-# Footwear-Page
+import {
+  btnShowNext,
+  btnShowPrev,
+  sectionContainer,
+  shoesArray,
+} from "./elements";
 
-## Getting Started
+let countShoe: number = 0;
 
-1. Clone the repository
-2. Join to the correct path of the clone
-3. Install LiveServer extension from Visual Studio Code [OPTIONAL]
-4. Click in "Go Live" from LiveServer extension
-
----
-
-1. Clone the repository
-2. Join to the correct path of the clone
-3. Open index.html in your favorite navigator
-
----
-
-1. Clone the repository
-2. Join to the correct path of the clone
-3. Execute: `yarn install`
-4. Execute: `yarn dev`
-
-## Description
-
-I made a website about footwear, but basically what I did was to take a design from the internet and implement it on my own without seeing the original code. All this was because I wanted to keep practicing CSS.
-
-## Technologies used
-
-1. CSS3
-2. Typescript
-3. HTML5
-
-## Portfolio Link
-
-[`https://www.diegolibonati.com.ar/#/project/37`](https://www.diegolibonati.com.ar/#/project/37)
-
-## Video
-
-https://user-images.githubusercontent.com/99032604/199616412-1774c6ba-90c5-452e-b2e4-07ee147fe584.mp4
-
-## Documentation
-
-The `changeBg()` function is in charge of changing the background color depending on the image displayed on the screen:
-
-```
 const changeBg = (): void => {
   if (countShoe === 0) {
     sectionContainer.style.background = "#CD021D";
@@ -54,11 +18,7 @@ const changeBg = (): void => {
     sectionContainer.style.background = "#48e";
   }
 };
-```
 
-The `showNextPage()` function is in charge of adding one more to the counter, if this counter reaches the maximum it will return to 0. Basically it will be executed when the next button is touched to see the next Slide:
-
-```
 const showNextPage = (): void => {
   if (countShoe >= shoesArray.length - 1) {
     countShoe = 0;
@@ -99,11 +59,7 @@ const showNextPage = (): void => {
   changeBg();
   return;
 };
-```
 
-The `showNextPage()` function is in charge of subtracting one from the counter, if this counter reaches the minimop it will go to the maximum value. Basically it will be executed when the prev button is touched to see the previous Slide:
-
-```
 const showPrevPage = (): void => {
   if (countShoe <= 0) {
     countShoe = shoesArray.length - 1;
@@ -145,4 +101,7 @@ const showPrevPage = (): void => {
   changeBg();
   return;
 };
-```
+
+btnShowNext.addEventListener("click", showNextPage);
+
+btnShowPrev.addEventListener("click", showPrevPage);
