@@ -36,7 +36,7 @@ I made a website about footwear, but basically what I did was to take a design f
 
 ## Video
 
-https://user-images.githubusercontent.com/99032604/199616412-1774c6ba-90c5-452e-b2e4-07ee147fe584.mp4
+https://github.com/DiegoLibonati/Footwear-Page/assets/99032604/dcd4926e-04ae-4846-83f8-0c952dc3acb5
 
 ## Documentation
 
