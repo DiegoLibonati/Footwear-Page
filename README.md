@@ -1,4 +1,4 @@
-# Footwear-Page
+# Footwear Page
 
 ## Getting Started
 
@@ -32,7 +32,7 @@ I made a website about footwear, but basically what I did was to take a design f
 
 ## Portfolio Link
 
-[`https://www.diegolibonati.com.ar/#/project/37`](https://www.diegolibonati.com.ar/#/project/37)
+[`https://www.diegolibonati.com.ar/#/project/Footwear-Page`](https://www.diegolibonati.com.ar/#/project/Footwear-Page)
 
 ## Video
 
